@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="css/main.css" rel="stylesheet" type="text/css" />
+    <link href="css/normalize.css" rel="stylesheet" type="text/css" />
+    <link href="css/all.css" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.6.0/dist/leaflet.css" />
+    
+        <!-- Latest compiled and minified CSS -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+       
+
+   <!-- adding fontawesome CDN -->
+   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+   <link href="https://use.fontawesome.com/releases/v5.0.6/css/all.css" rel="stylesheet">
+
+
+
+
+    <title>corona</title>
+</head>
+<body>
+    <section id="banner">
+  <nav class="navbar navbar-expand-lg navbar-dark  fixed-top ">
+    <div class="container">
+ <h1 class="upper pointer" style="color: white;font-size: 1.3em"><b>Corona</b><span style="color: red">Virus</span></h1>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    
+    
+     <ul class="navbar-nav ml-auto" style="font-size: 1rem;">
+            <li class="nav-item ">
+        <a class="nav-link text-danger" href="#banner">Home </a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link text-white" href="#map">live</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link text-white" href="#contact">Contact</a>
+      </li>
+
+      <li class="nav-item  mr-md-5">
+    <div class="container h-100">
+      <div class="d-flex justify-content-center h-100">
+        <div class="searchbar">
+          <input class="search_input" type="text" name="" placeholder="Search...">
+          <a href="#" class="search_icon"><i class="fas fa-search"></i></a>
+        </div>
+      </div>
+    </div>
+      </li>
+    </ul>
+  </div>
+</div>
+
+</nav>
+
+ </section>
+ <header class="background-color">
+        <div class="container">
+           
+            <div class="header-intro">
+                <div class="info fl-left">
+                     <div id="ctitle-tops">
+    <h1><span>informations</span> CORONAVIRUS <h1 style="font-size:0.7em;">covid-19</h1></h1></div>
+                    <p>
+                        La pandémie de maladie à coronavirus de 2019-2020 en France est documentée à partir du 24 janvier 2020 quand trois premiers cas y sont recensés. La France est le septième foyer de contagion de la maladie à coronavirus 2019 
+                    </p>
+                    <button class="custom-btn  upper transition pointer">CORONA</button>
+                    
+                </div>
+                <div class="header-img fl-right hidden-xs">
+                    <img src="img/header.png" alt="">
+                </div>
+                <div class="clearfix"></div>
+            </div>
+        </div>
+    </header>
+ <div id="ctitle-top">
+    <h1><span>informations</span> CORONAVIRUS </h1></div>
+
+
+<section class="counter">
+<img src="img/maroc.png" style="width: 15%;padding-bottom: 2%;" alt="">
+        <div>
+            <h1 class="heading_counter">0</h1>
+            <p>Confirmed</p>
+        </div>
+        <div><h1 class="heading_counter">0</h1>
+            <p>Recovered</p></div>
+        <div><h1 class="heading_counter">0</h1>
+            <p>Deaths</p></div>
+        <div><h1 class="heading_counter">0</h1>
+            <p>Negative</p></div>
+
+    </section>
+
+    
+    <div class="container" >
+    <center><h2>Live Map Covid-19 :</h2><br></center>
+
+        <div class="row">
+        <div class="col-xl-8 col-lg-8 col-md-12 col-12">
+              <div id="map"></div>
+            </div>
+            <div class="col-xl-4 col-lg-4 col-md-12 col-12">
+                <table class="table table-dark" id="taable" style="width: 50%">
+                        <thead>
+                            <tr>
+                            <th scope="col">Region</th>
+                            <th scope="col">Cases</th>
+                            <th scope="col">Latitude</th>
+                            <th scope="col">Longitude</th>
+                            </tr>
+                        </thead>
+                </table>
+            </div>
+
+        </div>
+
+    </div>
+
+
+
+ <section >
+
+     <div class="col-xl-4 col-lg-4 col-md-12 col-12">
+<table class="table" style="width: 20%">
+  <thead class="thead-dark">
+    <tr>
+      <th scope="col">France-Name</th>
+      <th scope="col">Arabe-Name</th>
+      <th scope="col">Phone</th>
+      <th scope="col">Type</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th scope="row">SOS M</th>
+      <td>النجدة الطبية</td>
+      <td>052289898</td>
+      <td>HOSPIT</td>
+    </tr>
+    <tr>
+      <th scope="row">I_PASTEUR</th>
+      <td>معهد باستور</td>
+      <td>052262062</td>
+      <td>HOSPIT</td>
+    </tr>
+    <tr>
+      <th scope="row">ANTIPOISON</th>
+      <td>مركز محاربة السموم</td>
+      <td>0801000180</td>
+      <td>CENTER</td>
+    </tr>
+      <tr>
+      <th scope="row">EPIDEMIOLOG</th>
+      <td>اليقضة الوبائية</td>
+      <td>0801004747</td>
+      <td>CENTER</td>
+    </tr>
+      <tr>
+      <th scope="row">POLICE</th>
+      <td>الشرطة</td>
+      <td>190</td>
+      <td>POLICE</td>
+    </tr>
+      <tr>
+      <th scope="row">POMPIERS</th>
+      <td>الوقاية المدنية</td>
+      <td>150</td>
+      <td>POMP</td>
+    </tr>
+     <tr>
+      <th scope="row">RENS</th>
+      <td>مركز الإستعلامات</td>
+      <td>160</td>
+      <td>CENTER</td>
+    </tr>
+     <tr>
+      <th scope="row"> SAMU</th>
+      <td>المساعدة الطبية الإسعجالية</td>
+      <td>141</td>
+      <td>CENTER</td>
+    </tr>
+  </tbody>
+</table>
+
+</div>
+
+ </section>
+
+
+
+<div>
+    <div class="container contact-form" id="contact">
+            <div class="contact-image">
+                <img src="https://image.ibb.co/kUagtU/rocket_contact.png" alt="rocket_contact"/>
+            </div>
+            <form method="post">
+                <h3>Drop Us a Message</h3>
+               <div class="row">
+                    <div class="col-md-6">
+                        <div class="form-group">
+                            <input type="text" name="txtName" class="form-control" placeholder="Your Name *" value="" />
+                        </div>
+                        <div class="form-group">
+                            <input type="text" name="txtEmail" class="form-control" placeholder="Your Email *" value="" />
+                        </div>
+                        <div class="form-group">
+                            <input type="text" name="txtPhone" class="form-control" placeholder="Your Phone Number *" value="" />
+                        </div>
+                        <div class="form-group">
+                            <input type="submit" name="btnSubmit" class="btnContact" value="Send Message" />
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="form-group">
+                            <textarea name="txtMsg" class="form-control" placeholder="Your Message *" style="width: 100%; height: 150px;"></textarea>
+                        </div>
+                    </div>
+                </div>
+
+            </form>
+</div>
+
+
+  <!-- Start Footer -->
+    
+    <footer class="background-color">
+        <div class="container">
+            <div class="footer-top">
+                <div class="hidden-xs">
+                    <h3>Navigation</h3>
+                    <ul>
+                        <li class="pointer transition">home</li>
+                        
+                        <li class="pointer transition">live</li>
+                        <li class="pointer transition">contact</li>
+                    </ul>
+                </div>
+                <div>
+                    <h3>Information</h3>
+                    <ul>
+                        <li class="pointer transition">about</li>
+                        <li class="pointer transition">terms &amp; conaditions</li>
+                        <li class="pointer transition">privacy policy</li>
+                        <li class="pointer transition">affiliate disclosure</li>
+                        <li class="pointer transition">submit</li>
+                    </ul>
+                </div>
+                <div>
+                    <h3>Connect</h3>
+                    <ul>
+                        <li class="pointer transition">instagram</li>
+                        <li class="pointer transition">facebook</li>
+                        <li class="pointer transition">twitter</li>
+                        <li class="pointer transition">email</li>
+                    </ul>
+                </div>
+                <div>
+                    <h3>Email Newsletter</h3>
+                    
+                    <form>
+                        <input type="email" placeholder="Enter your email address">
+                        <input type="button" value="SUBCRIBE" class="custom-btn transition pointer">
+                    </form>
+                </div>
+            </div>
+            <hr>
+            <p>
+                All design screenshots are copyright of their respective owners. This website contains affiliate links to products and services. If you go through them to make a purchase I may earn a small commission. There is no extra cost to you, so it’s just a nice way to help support this website in providing more content.
+            </p>
+        </div>
+        <div class="copy">
+            <div class="container">
+                <span class="fl-left">Copyright &copy; 2020 coronavirus</span>
+                <span class="fl-right pointer transition">Created by med Ait chikh</span>
+                <div class="clearfix"></div>
+            </div>
+        </div>
+    </footer>
+
+
+
+    
+ <script src="https://unpkg.com/leaflet@1.6.0/dist/leaflet.js"></script>
+    <script
+        src="https://code.jquery.com/jquery-3.4.1.min.js"
+        integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+              crossorigin="anonymous">
+       </script>
+ <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"  crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+   <script src="extensions/mobile/bootstrap-table-mobile.js"></script>
+        <script src="js/main.js"></script>
+
+    <script src="js/script19.js"></script>
+     <script src="js/html5shiv.min.js"></script>
+      <script src="js/jquery-3.4.1.min.js"></script>
+       <script src="js/jquery.nicescroll.min.js"></script>
+</body>
+</html>
