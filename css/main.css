@@ -1,9 +1,26 @@
 
+
+
+/* Start FQA Page */
+
+.fqa-collapse {
+    margin: 50px 0;
+}
+
+/*.fqa-collapse .panel-heading i {
+    float: left;
+    color: #29395A;
+}
+
+/* End FQA Page */
+
+
+
+
 .contact-form{
     background: #fff;
     margin-top: 10%;
-    margin-bottom: 5%;
-    width: 70%;
+     width: 70%;
 }
 .contact-form .form-control{
     border-radius:1rem;
@@ -52,9 +69,10 @@
 
 
 #map{
-    width: 60%;
-    height: 459px;
+    width: 95%;
+    height: 359px;
 }
+
 
 
 .nav-link{

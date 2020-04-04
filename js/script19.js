@@ -21,8 +21,8 @@ $(document).ready(function(){
                 tab += '<tbody><tr>';
                 tab += '<td>'+val.region+'</td>';
                 tab += '<td>'+val.cases+'</td>';
-                tab += '<td>'+val.latitude+'</td>';
-                tab += '<td>'+val.longitude+'</td>';
+                 tab += '<td>'+val.latitude+'</td>';
+                  tab += '<td>'+val.longitude+'</td>';
                 tab += '</tr></tbody>';
 
                 if(val.cases<10 && val.cases != 0){
@@ -215,7 +215,7 @@ function headingTwo (){
         }
 }
 }
-let twoTimer = setInterval(headingTwo,35)
+let twoTimer = setInterval(headingTwo,55)
 function headingThree (){
     if(scrollY > 300){
         headingCounter[2].textContent = parseFloat(headingCounter[2].textContent) + 1
@@ -233,5 +233,5 @@ function headingFour (){
         }
 }
 }
-let fourTimer = setInterval(headingFour,24);
+let fourTimer = setInterval(headingFour,9);
 
