@@ -22,7 +22,6 @@ $(document).ready(function(){
                 tab += '<td>'+val.region+'</td>';
                 tab += '<td>'+val.cases+'</td>';
                  tab += '<td>'+val.latitude+'</td>';
-                  tab += '<td>'+val.longitude+'</td>';
                 tab += '</tr></tbody>';
 
                 if(val.cases<10 && val.cases != 0){
